@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Wing Chun Trainer</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Wing Chun Trainer</h1>
+  <img id="image" src="images/hand.jpg" alt="Bild der Techniken">
+  <div id="interaction">
+    <table>
+      <tr>
+        <td>Wiederholungen: </td>
+        <td style="text-align:center">
+          <input id="repetitions" title="Anzahl der Wiederholungen" type="number" min="1" value="10" max="9999">
+        </td>
+      </tr>
+      <tr>
+        <td>Geschwindigkeit: </td>
+        <td style="text-align:center">
+          <select required id='speed' title="Pause zwischen Anweisungen">
+              <option value="0">0 ms</option>
+              <option value="500">500 ms</option>
+              <option value="1000" selected>1000 ms</option>
+              <option value="1500">1500 ms</option>
+              <option value="2000">2000 ms</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Schwierigkeitsgrad: </td>
+        <td style="text-align:center">
+          <select required id='select' title="Anfäger: Tan/Gan Sao&#10;Fortgeschritten: Tan/Gan/Pak Sao&#10;Profi: Tan/Gan/Pak/Cham Sao&#10;Meister: Tan/Gan/Pak/Cham/Bong Sao">
+            <option value="2">Anfänger</option>
+            <option value="3" selected>Fortgeschritten</option>
+            <option value="4">Profi</option>
+            <option value="5">Meister</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+
+    <button id="button" onclick="start();">Start</button>
+  </div>
+  <p id="text"></p>
+  <audio id="audio"></audio>
+</body>
+</html>

@@ -1,0 +1,53 @@
+h1 {
+  text-align: center;
+  font-size: 10vw;
+  margin: 5vw 0 4vw;
+}
+
+table {
+  margin: 0 auto;
+}
+td {
+  width:50%;
+  font-size: 3vw;
+}
+
+img {
+  display: block;
+  margin: 2vw auto;
+  width: 70%;
+}
+
+#interaction {
+  margin: 0 auto;
+  width: 70%
+}
+
+input {
+  text-align: center;
+  font-size: 3vw;
+  /* margin: 0 auto; */
+  /* border: none; */
+}
+
+select {
+  text-align: center;
+  font-size: 3vw;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* border: none; */
+}
+
+button {
+  display:block;
+  text-align: center;
+  margin: 1vw auto;
+  padding: 1vw 2vw;
+  font-size: 3vw;
+  width: 100%;
+}
+
+#text {
+  text-align: center;
+  font-size: 3vw;
+}
